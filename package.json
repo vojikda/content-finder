@@ -31,7 +31,9 @@
     "server:prod": "node dist/server/index.js",
     "build:server": "tsc -p tsconfig.server.json",
     "start:prod": "npm run build:server && npm run server:prod",
-    "postinstall": "npm run build:server"
+    "postinstall": "npm run build:server",
+    "clean": "rm -rf dist",
+    "prebuild:server": "npm run clean"
   },
   "eslintConfig": {
     "extends": [

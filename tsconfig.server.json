@@ -5,7 +5,9 @@
     "outDir": "dist",
     "target": "es2017",
     "isolatedModules": false,
-    "noEmit": false
+    "noEmit": false,
+    "jsx": "react"
   },
-  "include": ["src/server/**/*"]
+  "include": ["src/server/**/*"],
+  "exclude": ["src/**/*.test.ts", "src/**/*.spec.ts"]
 } 
