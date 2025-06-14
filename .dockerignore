@@ -9,4 +9,9 @@ build
 .env.test.local
 .env.production.local
 README.md
-.DS_Store 
+.DS_Store
+dist
+*.log
+coverage
+.vscode
+.idea 
