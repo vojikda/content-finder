@@ -29,9 +29,8 @@
     "eject": "react-scripts eject",
     "server": "ts-node src/server/index.ts",
     "server:prod": "node dist/server/index.js",
-    "railway-login": "railway login",
-    "railway-init": "railway init",
-    "railway-up": "railway up"
+    "build:server": "tsc -p tsconfig.server.json",
+    "start:prod": "npm run build:server && npm run server:prod"
   },
   "eslintConfig": {
     "extends": [
