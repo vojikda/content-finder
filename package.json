@@ -33,7 +33,8 @@
     "start:prod": "npm run build:server && npm run server:prod",
     "postinstall": "npm run build:server",
     "clean": "rm -rf dist",
-    "prebuild:server": "npm run clean"
+    "prebuild:server": "npm run clean",
+    "verify:tsconfig": "test -f tsconfig.json && test -f tsconfig.server.json"
   },
   "eslintConfig": {
     "extends": [
